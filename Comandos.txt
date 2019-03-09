@@ -1,0 +1,11 @@
+Primeiro abrir o git na pasta(pasta para subir para repositorio)
+git init .
+git add * #sobe todos os arquivos da pasta
+git commit -m "Inicio"
+________________________________________________
+git add *
+git commit -m "nome do commit"
+git push origin master
+
+_________________________________________________#startar servidor python#___________________________________
+python -m http.server 8000(numero da porta)
