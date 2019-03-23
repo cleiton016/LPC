@@ -1,12 +1,16 @@
 <h1>Notícias</h1>
+<ul>
+    <li><a href="admin/">Django-admin</a></li>
+</ul>
+
 {% for noticia in object_list %}
 <div>
 <h2>{{ noticia.titulo }}</h2>
+    {% if noticia.publicado == True %}
     <div>
         <p>{{ noticia.conteudo | linebreaksbr }}</p>
         <p>{{ noticia.data_criacao}}</p>
         <p>{{ noticia.data_publicacao}}</p>
-        <p>{{ noticia.publicado}}</p>
-</div><br>
+    </div><br>{% endif %}
 </div>
 {% endfor %}
